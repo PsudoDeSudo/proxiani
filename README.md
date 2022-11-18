@@ -1,6 +1,6 @@
-# Proxiani
+  # Proxiani
 Proxiani is a proxy server designed to optimize communication between Miriani and MUD clients. It also comes with features that enhance the gaming experience in conjunction with Miriani Soundpacks.
-##Note
+## Note
 This repository is a fork of [Proxiani](https://github.com/tms88/proxiani).
 This project takes a more abstract approach to the client and server architecture. Notably, parting with  MUD client-specific features in the hope to make it more moduler.
 ## Installation
