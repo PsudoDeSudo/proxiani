@@ -1,6 +1,8 @@
 # Proxiani
-Proxiani is a proxy server designed to optimize communication between Miriani and VIP Mud. It also comes with features that enhance the gaming experience in conjunction with the Miriani Soundpack for VIP Mud.
-
+Proxiani is a proxy server designed to optimize communication between Miriani and MUD clients. It also comes with features that enhance the gaming experience in conjunction with Miriani Soundpacks.
+##Note
+This repository is a fork of [Proxiani](https://github.com/tms88/proxiani).
+This project takes a more abstract approach to the client and server architecture. Notably, parting with  MUD client-specific features in the hope to make it more moduler.
 ## Installation
 Download and install the latest recommended version of Node.js from [nodejs.org](https://nodejs.org/).
 Node 10 or newer is required.
@@ -13,7 +15,7 @@ $ npm start
 
 If you prefer to run Proxiani without a console window (recommended for most users), then launch the file called Start.vbs that is located inside the Proxiani folder.
 
-Then use VIP Mud to connect to:
+Then use your MUD client to connect to:
 - Host: localhost
 - Port: 1234
 
@@ -31,9 +33,7 @@ There are also some helpful VBScripts located in the root of this package:
 - Supports SSL/TLS for encrypting all communication with Miriani.
 - Automatically reconnects to Miriani if network issues break the connection.
 - Addresses an issue in VIP Mud that causes lines of text to randomly break.
-- Improves stability for VIP Mud and the soundpack.
 - Makes sms, smc, and other starmap commands lightning fast.
-- Makes the conf command much faster.
 - Creates clean and timestamped logs of incoming text from Miriani.
 ... and much more!
 
