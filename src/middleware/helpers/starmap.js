@@ -51,6 +51,7 @@ const shipPriorities = [
  'Muzatini',
  'Ontanka',
  'Bzzr',
+ 'Frelhaza',
  'Bzano',
  'Bzani',
  'Trajrrk',
@@ -58,7 +59,7 @@ const shipPriorities = [
  'Potateoton',
 ];
 
-const typeTitles = ['Accelerators', 'Artifacts', 'Asteroids', 'Blockades', 'Buoys', 'Combat Drones', 'Control Beacons', 'Debris', 'Dry Docks', 'Interdictors', 'Jumpgates', 'Missiles', 'Mobile Platforms', 'Moons', 'Pellets', 'Planets', 'Private Moons', 'Private Planets', 'Private Space Stations', 'Proximity Weapons', 'Relics', 'Satellites', 'Space Stations', 'Stars', 'Starships', 'Unknown', 'Wormholes'];
+const typeTitles = ['Accelerators', 'Artifacts', 'Asteroids', 'Blockades', 'Buoys', 'Combat Drones', 'Control Beacons', 'Debris', 'Dry Docks', 'Interdictors', 'Jumpgates', 'Long-range Communication Beacons', 'Missiles', 'Mobile Platforms', 'Moons', 'Pellets', 'Planets', 'Private Moons', 'Private Planets', 'Private Space Stations', 'Proximity Weapons', 'Relics', 'Satellites', 'Space Stations', 'Stars', 'Starships', 'Unknown', 'Wormholes'];
 const types = typeTitles.map(objectType => objectType.toLowerCase());
 const findType = text => {
  if (text.length === 0) return;
@@ -67,6 +68,7 @@ const findType = text => {
  else if (text.length > 1 && 'beacons'.startsWith(text)) return 'Control Beacons';
  else if (text.length > 1 && 'docks'.startsWith(text)) return 'Dry Docks';
  else if (text.length > 1 && 'drones'.startsWith(text)) return 'Combat Drones';
+ else if (text.length > 1 && 'long'.startsWith(text)) return 'Long-range Communication Beacons';
  else if ('mo'.startsWith(text)) return 'Moons';
  else if (text.length > 3 && 'platforms'.startsWith(text)) return 'Mobile Platforms';
  else if ('prox'.startsWith(text) || (text.length > 1 && 'weapons'.startsWith(text))) return 'Proximity Weapons';
